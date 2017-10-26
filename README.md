@@ -23,7 +23,7 @@ https://www.npmjs.com/package/@angular/cli
 
 Checar se instalou com "ng help". Deve aparecer um help gigantesco. Apareceu. Funcionou!
 
-Falando em AngularCLI, a imagem do localhost que está na parte 1 está diferente da que eu obtive. Segundo a Evelyn Mendes, a versão do AngularCLI mudou, mas funciona do mesmo jeito. (veja a imagem aqui).
+Falando em AngularCLI, a imagem do localhost que está na parte 1 está diferente da que eu obtive. Segundo a Evelyn Mendes, a versão do AngularCLI mudou, mas funciona do mesmo jeito. (veja a imagem aqui https://github.com/luisaoba/angularFirebase/blob/master/angularCLI.png).
 
 
 ## Pasta angularFirebase
