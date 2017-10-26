@@ -4,6 +4,7 @@ Estudo de Angular e Firebase de Evelyn Mendes
 Eu acessei o site https://braziljs.org/blog/simples-aplicacao-real-time-com-angular-4-e-firebase-parte-1/ e estou estudando.
 
 Para instalar o NODE e NPM, segui o site abaixo e deu certo no Ubuntu 16.
+
 http://blog.locaweb.com.br/artigos/desenvolvimento-artigos/instalando-node-js-6-x-e-npm-no-ubuntu-16-04/
 	Funcionou! PPA!
 		sudo -i
@@ -14,7 +15,7 @@ http://blog.locaweb.com.br/artigos/desenvolvimento-artigos/instalando-node-js-6-
 			v7.10.1
 		npm -v
 			v4.2.0
-				
+
 E para instalar o angular CLI citado no artigo da Evelyn, usei este site:
 https://www.npmjs.com/package/@angular/cli
   npm install -g @angular/cli
