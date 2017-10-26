@@ -3,19 +3,19 @@ Estudo de Angular e Firebase de Evelyn Mendes<br>
 <br>
 Eu acessei o site https://braziljs.org/blog/simples-aplicacao-real-time-com-angular-4-e-firebase-parte-1/ e estou estudando. Mas antes, precisei instalar algumas coisas (pra variar...)<br>
 <br>
-##NODE e NPM<br>
+## NODE e NPM<br>
 Para instalar o NODE e NPM, segui o site abaixo e deu certo no Ubuntu 16.<br>
 http://blog.locaweb.com.br/artigos/desenvolvimento-artigos/instalando-node-js-6-x-e-npm-no-ubuntu-16-04/<br>
-&nbsp;&nbsp;&nbsp;Funcionou com PPA!<br>
-&nbsp;&nbsp;&nbsp;&nbsp;sudo -i<br>
-&nbsp;&nbsp;&nbsp;&nbsp;apt install python-software-properties<br>
-&nbsp;&nbsp;&nbsp;&nbsp;curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -<br>
-&nbsp;&nbsp;&nbsp;&nbsp;apt-get install nodejs<br>
-&nbsp;&nbsp;&nbsp;&nbsp;node -v<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v7.10.1<br>
-&nbsp;&nbsp;&nbsp;&nbsp;npm -v<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v4.2.0<br>
-<br>
+- Funcionou com PPA!
+  - sudo -i
+  - apt install python-software-properties
+  - curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+  - apt-get install nodejs
+  - node -v
+    - v7.10.1
+  - npm -v
+    - v4.2.0
+
 E para instalar o angular CLI citado no artigo da Evelyn, usei este site:<br>
 https://www.npmjs.com/package/@angular/cli<br>
   npm install -g @angular/cli<br>
