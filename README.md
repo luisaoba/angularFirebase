@@ -5,39 +5,39 @@ Eu acessei o site https://braziljs.org/blog/simples-aplicacao-real-time-com-angu
 
 Para instalar o NODE e NPM, segui o site abaixo e deu certo no Ubuntu 16.
 
-http://blog.locaweb.com.br/artigos/desenvolvimento-artigos/instalando-node-js-6-x-e-npm-no-ubuntu-16-04/
-	Funcionou! PPA!
-		sudo -i
-		apt install python-software-properties
-		curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-		apt-get install nodejs
-		node -v
-			v7.10.1
-		npm -v
-			v4.2.0
-
-E para instalar o angular CLI citado no artigo da Evelyn, usei este site:
-https://www.npmjs.com/package/@angular/cli
-  npm install -g @angular/cli
-  checar se instalou com "ng help"
-  Funcionou!			
-
-
-Depois criei a pasta angularFirebase
-   mkdir angularFirebase
-   cd angularFirebase/
-    ng new realtimeapp
-    cd realtimeapp
-
-Seguindo o roteiro da parte 1, fiz as seguintes anotações:
-ng serve
-    browser http://localhost:4200
-    pare o ng serve usando a combinação de teclas Ctrl-C
-    ng g c CadastroPessoa 
-      g=gerar, c=componente
-
-Quando coloquei formulário com id (#f) deu uma tela em branco. Resolvi com a dica do Giuliano.
-
+http://blog.locaweb.com.br/artigos/desenvolvimento-artigos/instalando-node-js-6-x-e-npm-no-ubuntu-16-04/<br>
+	Funcionou! PPA!<br>
+		sudo -i<br>
+		apt install python-software-properties<br>
+		curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -<br>
+		apt-get install nodejs<br>
+		node -v<br>
+			v7.10.1<br>
+		npm -v<br>
+			v4.2.0<br>
+<br>
+E para instalar o angular CLI citado no artigo da Evelyn, usei este site:<br>
+https://www.npmjs.com/package/@angular/cli<br>
+  npm install -g @angular/cli<br>
+  checar se instalou com "ng help"<br>
+  Funcionou!<br>
+<br>
+<br>
+Depois criei a pasta angularFirebase<br>
+   mkdir angularFirebase<br>
+   cd angularFirebase/<br>
+    ng new realtimeapp<br>
+    cd realtimeapp<br>
+<br>
+Seguindo o roteiro da parte 1, fiz as seguintes anotações:<br>
+    ng serve<br>
+    browser http://localhost:4200<br>
+    pare o ng serve usando a combinação de teclas Ctrl-C<br>
+    ng g c CadastroPessoa<br>
+      g=gerar, c=componente<br>
+<br>
+Quando coloquei formulário com id (#f) deu uma tela em branco. Resolvi com a dica do Giuliano.<br>
+<br>
     Giuliano Massaro • há 3 meses
     Comecei agora, seguindo os passos apanhei um pouco na declaração #f="ngForm", mas consegui resolver.
     Para resolver tive que adicionar uns códigos no arquivo app.module.ts, abaixo estão as alterações que fiz, espero que ajude quem estiver com o mesmo problema.
@@ -50,11 +50,12 @@ Quando coloquei formulário com id (#f) deu uma tela em branco. Resolvi com a di
     BrowserModule,
     FormsModule
     ],
-
-
-PARTE 1 OK!
-		para rodar
-			cd Desktop/angularFirebase/realtimeapp
-			ng serve
-			browser http://localhost:4200
-
+<br>
+<br>
+PARTE 1 OK!<br>
+		para rodar<br>
+			cd Desktop/angularFirebase/realtimeapp<br>
+			ng serve<br>
+			browser http://localhost:4200<br>
+<br>
+<br>
