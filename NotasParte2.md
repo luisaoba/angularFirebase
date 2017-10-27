@@ -100,7 +100,7 @@ DERAM ERROS...
 MESMO ASSIM "ng serve" de novo
 PAU de novo...
 		
-Diga do StackOverflow de ruzenhack
+Dica do StackOverflow de ruzenhack
 https://stackoverflow.com/questions/42925690/angular2-cli-error-angular-compiler-cli-package-was-not-properly-installed
 
 - I had the same problem. I resolved it following the "Updating Angular CLI" process in the npm @angular/cli page, that is:
