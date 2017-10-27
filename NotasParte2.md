@@ -106,14 +106,14 @@ https://stackoverflow.com/questions/42925690/angular2-cli-error-angular-compiler
 - I had the same problem. I resolved it following the "Updating Angular CLI" process in the npm @angular/cli page, that is:
 
   - 1. Uninstall and clean (global)
-    (cd pasta do realtimeapp)
-  - rm -rf node_modules dist
-  - (talvez precise de sudo aqui) $ npm uninstall -g @angular/cli
-  - (idem sudo) $ npm cache clean
+    - (cd pasta do realtimeapp)
+    - rm -rf node_modules dist
+    - (talvez precise de sudo aqui) $ npm uninstall -g @angular/cli
+    - (idem sudo) $ npm cache clean
 
   - 2. Reinstall and play (global)
-  - (idem sudo) $ npm install -g @angular/cli@latest
-  - (idem sudo) $ npm install
-  - ng serve
+    - (idem sudo) $ npm install -g @angular/cli@latest
+    - (idem sudo) $ npm install
+    - ng serve
 
 ### Funcionou. Fim parte 2!
