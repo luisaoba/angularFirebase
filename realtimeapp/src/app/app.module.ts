@@ -4,20 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { CadastroPessoaComponent } from './cadastro-pessoa/cadastro-pessoa.component';
 
-import { FirebaseConfig } from './../environments/firebase.config';
 import { AngularFireModule } from 'angularfire2/index';
+import { FirebaseConfig } from './../environments/firebase.config';
+
+import { CadastroPessoaModule } from './cadastro-pessoa/cadastro-pessoa.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastroPessoaComponent
   ],
   imports: [
     BrowserModule,
 	FormsModule,
-	HttpModule,
+	HttpModule, CadastroPessoaModule, 
 	AngularFireModule.initializeApp(FirebaseConfig)
   ],
   providers: [],
