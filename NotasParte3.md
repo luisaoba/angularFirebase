@@ -74,7 +74,7 @@ Cometi 3 erros:
 
 
 Veja como ficou cadastro-pessoa-lista.component.ts<br>
-+++++++++++++++++++
+
 
 	import { Observable } from 'rxjs/Rx';
 
@@ -103,11 +103,11 @@ Veja como ficou cadastro-pessoa-lista.component.ts<br>
 		ngOnInit() { }
 	}
 
-+++++++++++++++++++
+
 
 E meu package.json atual
 
-+++++++++++++++++++
+
 
 	{
 	"name": "realtimeapp",
@@ -161,7 +161,7 @@ E meu package.json atual
 		"typescript": "~2.3.3"
 	}
 }
-+++++++++++++++++++
+	
 
 
 FIM-Tudo certo e tudo funcionando como o vídeo da parte 3 de Evelyn!
