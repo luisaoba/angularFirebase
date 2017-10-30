@@ -68,12 +68,12 @@ Mesmo erro!!
 
 Após várias tentativas e comunicações com a Evelyn, deu certo!
 Cometi 3 erros:
-1 - em ".subscribe(result =>" parênteses () por colchetes []... o correto é parênteses.
-2 - tirei o import do AngularFireList.
-3 - troquei parênteses () por colchetes [] em ".list('pessoas')". O correto é parênteses. E ele tinha me mostrou OUTRO erro em ".valueChanges()...";
+1 em ".subscribe(result =>" parênteses () por colchetes []... o correto é parênteses.
+2 tirei o import do AngularFireList.
+3 troquei parênteses () por colchetes [] em ".list('pessoas')". O correto é parênteses. E ele tinha me mostrou OUTRO erro em ".valueChanges()...";
 
 
-Veja como ficou cadastro-pessoa-lista.component.ts
+Veja como ficou cadastro-pessoa-lista.component.ts<br>
 +++++++++++++++++++
 
 	import { Observable } from 'rxjs/Rx';
@@ -108,61 +108,65 @@ Veja como ficou cadastro-pessoa-lista.component.ts
 E meu package.json atual
 
 +++++++++++++++++++
-	{
-	  "name": "realtimeapp",
-	  "version": "0.0.0",
-	  "license": "MIT",
-	  "scripts": {
-		"ng": "ng",
-		"start": "ng serve",
-		"build": "ng build",
-		"test": "ng test",
-		"lint": "ng lint",
-		"e2e": "ng e2e"
-	  },
-	  "private": true,
-	  "dependencies": {
-		"@angular/animations": "^4.2.4",
-		"@angular/common": "^4.2.4",
-		"@angular/compiler": "^4.2.4",
-		"@angular/compiler-cli": "^4.4.6",
-		"@angular/core": "^4.2.4",
-		"@angular/forms": "^4.2.4",
-		"@angular/http": "^4.2.4",
-		"@angular/platform-browser": "^4.2.4",
-		"@angular/platform-browser-dynamic": "^4.2.4",
-		"@angular/router": "^4.2.4",
-		"angularfire2": "^5.0.0-rc.3",
-		"core-js": "^2.4.1",
-		"firebase": "^4.6.0",
-		"rxjs": "^5.4.2",
-		"zone.js": "^0.8.14"
-	  },
-	  "devDependencies": {
-		"@angular/cli": "1.4.9",
-		"@angular/compiler-cli": "^4.2.4",
-		"@angular/language-service": "^4.2.4",
-		"@types/jasmine": "~2.5.53",
-		"@types/jasminewd2": "~2.0.2",
-		"@types/node": "~6.0.60",
-		"codelyzer": "~3.2.0",
-		"jasmine-core": "~2.6.2",
-		"jasmine-spec-reporter": "~4.1.0",
-		"karma": "~1.7.0",
-		"karma-chrome-launcher": "~2.1.1",
-		"karma-cli": "~1.0.1",
-		"karma-coverage-istanbul-reporter": "^1.2.1",
-		"karma-jasmine": "~1.1.0",
-		"karma-jasmine-html-reporter": "^0.2.2",
-		"protractor": "~5.1.2",
-		"ts-node": "~3.2.0",
-		"tslint": "~5.7.0",
-		"typescript": "~2.3.3"
-	  }
-	}
-+++++++++++++++++++
+	{<br>
+	  "name": "realtimeapp",<br>
+	  "version": "0.0.0",<br>
+	  "license": "MIT",<br>
+	  "scripts": {<br>
+		"ng": "ng",<br>
+		"start": "ng serve",<br>
+		"build": "ng build",<br>
+		"test": "ng test",<br>
+		"lint": "ng lint",<br>
+		"e2e": "ng e2e"<br>
+	  },<br>
+	  "private": true,<br>
+	  "dependencies": {<br>
+		"@angular/animations": "^4.2.4",<br>
+		"@angular/common": "^4.2.4",<br>
+		"@angular/compiler": "^4.2.4",<br>
+		"@angular/compiler-cli": "^4.4.6",<br>
+		"@angular/core": "^4.2.4",<br>
+		"@angular/forms": "^4.2.4",<br>
+		"@angular/http": "^4.2.4",<br>
+		"@angular/platform-browser": "^4.2.4",<br>
+		"@angular/platform-browser-dynamic": "^4.2.4",<br>
+		"@angular/router": "^4.2.4",<br>
+		"angularfire2": "^5.0.0-rc.3",<br>
+		"core-js": "^2.4.1",<br>
+		"firebase": "^4.6.0",<br>
+		"rxjs": "^5.4.2",<br>
+		"zone.js": "^0.8.14"<br>
+	  },<br>
+	  "devDependencies": {<br>
+		"@angular/cli": "1.4.9",<br>
+		"@angular/compiler-cli": "^4.2.4",<br>
+		"@angular/language-service": "^4.2.4",<br>
+		"@types/jasmine": "~2.5.53",<br>
+		"@types/jasminewd2": "~2.0.2",<br>
+		"@types/node": "~6.0.60",<br>
+		"codelyzer": "~3.2.0",<br>
+		"jasmine-core": "~2.6.2",<br>
+		"jasmine-spec-reporter": "~4.1.0",<br>
+		"karma": "~1.7.0",<br>
+		"karma-chrome-launcher": "~2.1.1",<br>
+		"karma-cli": "~1.0.1",<br>
+		"karma-coverage-istanbul-reporter": "^1.2.1",<br>
+		"karma-jasmine": "~1.1.0",<br>
+		"karma-jasmine-html-reporter": "^0.2.2",<br>
+		"protractor": "~5.1.2",<br>
+		"ts-node": "~3.2.0",<br>
+		"tslint": "~5.7.0",<br>
+		"typescript": "~2.3.3"<br>
+	  }<br>
+	}<br>
++++++++++++++++++++<br>
 
 FIM-Tudo certo e tudo funcionando como o vídeo da parte 3 de Evelyn!
 
 Agradecimentos: queria agradecer a Evelyn Mendes a paciência e presteza em tirar minhas dúvidas, à turma do stackoverflow que
 	tirou dúvidas sobre a instalação, reinstalção do node_modules (npm...) e a Internet.
+
+Hardware e Softwares utilizados: 
+- Ubuntu 16.04 64bits, Geany 1.27
+- Desktop com 8GB RAM intel i5-2400 3.1 Ghz x 4 
