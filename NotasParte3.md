@@ -32,7 +32,7 @@ Corrigido para "AngularFireDatabase" com "b" minúsculo em TODOS os lugares. Ago
 	
 Funcionou a gravação no Firebase. Estranho que HORA NENHUMA eu defini tabelas, campos, tamanho de variável...enfim...vamos simbora..
 	
-##Listagem com Firebase:
+## Listagem com Firebase
 Obs: pule para "Dicas Evelyn 2" caso não queira ter erros de atualização do Angular, pois desde a confecção do artigo da Evelyn
 até hoje (30-10-2017) algumas coisas mudaram no Angular/Firebase.
 	
@@ -51,10 +51,10 @@ Em cadastro-pessoa-lista.component.ts, troque:
 ### Dicas Evelyn 1
 
 Peguei telas 'correcaoParte3', mas não deu certo
-ERROR in .../realtimeapp/src/app/cadastro-pessoa/
+- ERROR in .../realtimeapp/src/app/cadastro-pessoa/
 	cadastro-pessoa-lista/cadastro-pessoa-lista.component.ts (1,33): 
 	Cannot find module '@angularfire2/database/interfaces'.
-ERROR in .../realtimeapp/src/app/cadastro-pessoa/
+- ERROR in .../realtimeapp/src/app/cadastro-pessoa/
 	cadastro-pessoa-lista/cadastro-pessoa-lista.component.ts (20,15): 
 	Type '(result: any) => void' cannot be used as an index type.
 
@@ -67,6 +67,12 @@ Mesmo erro!!
 ### Dicas Evelyn 2:
 
 Após várias tentativas e comunicações com a Evelyn, deu certo!
+Cometi 3 erros:
+1 - em ".subscribe(result =>" parênteses () por colchetes []... o correto é parênteses.
+2 - tirei o import do AngularFireList.
+3 - troquei parênteses () por colchetes [] em ".list('pessoas')". O correto é parênteses. E ele tinha me mostrou OUTRO erro em ".valueChanges()...";
+
+
 Veja como ficou cadastro-pessoa-lista.component.ts
 +++++++++++++++++++
 
@@ -102,58 +108,58 @@ Veja como ficou cadastro-pessoa-lista.component.ts
 E meu package.json atual
 
 +++++++++++++++++++
-{
-  "name": "realtimeapp",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {
-	"ng": "ng",
-	"start": "ng serve",
-	"build": "ng build",
-	"test": "ng test",
-	"lint": "ng lint",
-	"e2e": "ng e2e"
-  },
-  "private": true,
-  "dependencies": {
-	"@angular/animations": "^4.2.4",
-	"@angular/common": "^4.2.4",
-	"@angular/compiler": "^4.2.4",
-	"@angular/compiler-cli": "^4.4.6",
-	"@angular/core": "^4.2.4",
-	"@angular/forms": "^4.2.4",
-	"@angular/http": "^4.2.4",
-	"@angular/platform-browser": "^4.2.4",
-	"@angular/platform-browser-dynamic": "^4.2.4",
-	"@angular/router": "^4.2.4",
-	"angularfire2": "^5.0.0-rc.3",
-	"core-js": "^2.4.1",
-	"firebase": "^4.6.0",
-	"rxjs": "^5.4.2",
-	"zone.js": "^0.8.14"
-  },
-  "devDependencies": {
-	"@angular/cli": "1.4.9",
-	"@angular/compiler-cli": "^4.2.4",
-	"@angular/language-service": "^4.2.4",
-	"@types/jasmine": "~2.5.53",
-	"@types/jasminewd2": "~2.0.2",
-	"@types/node": "~6.0.60",
-	"codelyzer": "~3.2.0",
-	"jasmine-core": "~2.6.2",
-	"jasmine-spec-reporter": "~4.1.0",
-	"karma": "~1.7.0",
-	"karma-chrome-launcher": "~2.1.1",
-	"karma-cli": "~1.0.1",
-	"karma-coverage-istanbul-reporter": "^1.2.1",
-	"karma-jasmine": "~1.1.0",
-	"karma-jasmine-html-reporter": "^0.2.2",
-	"protractor": "~5.1.2",
-	"ts-node": "~3.2.0",
-	"tslint": "~5.7.0",
-	"typescript": "~2.3.3"
-  }
-}
+	{
+	  "name": "realtimeapp",
+	  "version": "0.0.0",
+	  "license": "MIT",
+	  "scripts": {
+		"ng": "ng",
+		"start": "ng serve",
+		"build": "ng build",
+		"test": "ng test",
+		"lint": "ng lint",
+		"e2e": "ng e2e"
+	  },
+	  "private": true,
+	  "dependencies": {
+		"@angular/animations": "^4.2.4",
+		"@angular/common": "^4.2.4",
+		"@angular/compiler": "^4.2.4",
+		"@angular/compiler-cli": "^4.4.6",
+		"@angular/core": "^4.2.4",
+		"@angular/forms": "^4.2.4",
+		"@angular/http": "^4.2.4",
+		"@angular/platform-browser": "^4.2.4",
+		"@angular/platform-browser-dynamic": "^4.2.4",
+		"@angular/router": "^4.2.4",
+		"angularfire2": "^5.0.0-rc.3",
+		"core-js": "^2.4.1",
+		"firebase": "^4.6.0",
+		"rxjs": "^5.4.2",
+		"zone.js": "^0.8.14"
+	  },
+	  "devDependencies": {
+		"@angular/cli": "1.4.9",
+		"@angular/compiler-cli": "^4.2.4",
+		"@angular/language-service": "^4.2.4",
+		"@types/jasmine": "~2.5.53",
+		"@types/jasminewd2": "~2.0.2",
+		"@types/node": "~6.0.60",
+		"codelyzer": "~3.2.0",
+		"jasmine-core": "~2.6.2",
+		"jasmine-spec-reporter": "~4.1.0",
+		"karma": "~1.7.0",
+		"karma-chrome-launcher": "~2.1.1",
+		"karma-cli": "~1.0.1",
+		"karma-coverage-istanbul-reporter": "^1.2.1",
+		"karma-jasmine": "~1.1.0",
+		"karma-jasmine-html-reporter": "^0.2.2",
+		"protractor": "~5.1.2",
+		"ts-node": "~3.2.0",
+		"tslint": "~5.7.0",
+		"typescript": "~2.3.3"
+	  }
+	}
 +++++++++++++++++++
 
 FIM-Tudo certo e tudo funcionando como o vídeo da parte 3 de Evelyn!
