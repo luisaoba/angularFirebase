@@ -9,6 +9,8 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class CadastroPessoaFormComponent implements OnInit {
 
+	pessoas: any;
+
 	constructor( private angularFire: AngularFireDatabase) { }
 
 	ngOnInit() { }
