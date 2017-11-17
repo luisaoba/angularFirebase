@@ -14,6 +14,24 @@ Selecionar DATABASE FUNCTIONS E ROSTING...
 
 No BUILD deu erro.
 
+Em cadastro-pessoa-lista.component.ts altere o constructor de:
+        constructor(db: AngularFireDatabase) {
+		this.pessoas = db.list ('pessoas');
+	}
+
+Para:
+        constructor(db: AngularFireDatabase) {
+		db
+			.list('pessoas')
+			.valueChanges()
+			.subscribe(result => {
+				this.pessoas = result;
+			})
+	}
+
+
+
+
 Em /app/cadastro-pessoa/cadastro-pessoa.component.ts faltou declarar 'pessoas'
 - export class CadastroPessoaFormComponent implements OnInit {
   - "pessoas: any;"
