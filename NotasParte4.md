@@ -31,6 +31,10 @@ Para:
 
 
 
+Em cadastro-pessoa-lista.component.html, retirar " | async " do laço *ngFor.
+
+
+
 
 Em /app/cadastro-pessoa/cadastro-pessoa.component.ts faltou declarar 'pessoas'
 - export class CadastroPessoaFormComponent implements OnInit {
